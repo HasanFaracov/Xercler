@@ -129,9 +129,9 @@ ORDER BY o.id ASC
             echo'<td>#</td>';
             echo'<td>Toplam</td>';
             echo'<td>----</td>';
-            echo'<td> '.$toplam_mexaric.' (AZN) </td>';
-            echo'<td>'.$toplam_medaxil.' (AZN) </td>';
-            echo'<td> '.$toplam_medaxil-$toplam_mexaric.'  </td>';
+            echo'<td> '.round($toplam_mexaric,2).' (AZN) </td>';
+            echo'<td>'.round($toplam_medaxil,2).' (AZN) </td>';
+            echo'<td> '.round($toplam_medaxil-$toplam_mexaric,2).'  </td>';
             echo'<td>'.$tarix.'</td>';
             
             echo'</tr>';
@@ -147,9 +147,9 @@ ORDER BY o.id ASC
             echo'<td>'.$i.'</td>';
             echo'<td>'.$info['rey'].'</td>';
             echo'<td>'.$info['kat_name'].'</td>';
-            if($info['odn_id']==2){  echo'<td>'.$info['mebleg'].' ('.$info['val_name'].')</td>';  }else{echo'<td> &nbsp </td>';}
-            if($info['odn_id']==1){  echo'<td>'.$info['mebleg'].' ('.$info['val_name'].')</td>';  }else{echo'<td> &nbsp </td>';}
-            echo'<td> '.$toplam_qaliq[$qaliq_sayi].'  </td>';
+            if($info['odn_id']==2){  echo'<td>'.round($info['mebleg'],2).' ('.$info['val_name'].')</td>';  }else{echo'<td> &nbsp </td>';}
+            if($info['odn_id']==1){  echo'<td>'.round($info['mebleg'],2).' ('.$info['val_name'].')</td>';  }else{echo'<td> &nbsp </td>';}
+            echo'<td> '.round($toplam_qaliq[$qaliq_sayi],2).'  </td>';
             echo'<td>'.$info['tarix'].'</td>';
             
             echo'</tr>';
