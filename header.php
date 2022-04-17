@@ -8,6 +8,12 @@ include"connect.php";
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta property="og:url" content="https://xercler.tk/"/>
+        <meta property="og:title" content='Xərclərin idarə olunması - Xercler.tk'/>
+        <meta property="og:description" content='Mədaxil və məxaric ödənişlərin idarəsi'/>
+        <meta property="og:site_name" content="Xercler"/>
+        <meta property="og:type" content="article"/>
 <title>Xərclərin idarə olunması</title>
 
 
