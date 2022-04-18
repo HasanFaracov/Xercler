@@ -10,11 +10,16 @@ if(isset($_POST['mebleg'])){
     $mebleg = strip_tags($mebleg);
     $mebleg = htmlspecialchars($mebleg);
     $mebleg = mysqli_real_escape_string($con,$mebleg);
+
+    $rey = trim($_POST['rey']);
+    $rey = strip_tags($rey);
+    $rey = htmlspecialchars($rey);
+    $rey = mysqli_real_escape_string($con,$rey);
     
     if($_SESSION['token']==$_POST['token']){ 
                
         $daxilet = mysqli_query($con,"INSERT INTO odenis(nov,kategoriya,valyuta,mebleg,rey,tarix)
-        VALUES('".$_POST['odn_id']."','".$_POST['kategoriya']."','".$_POST['val_id']."','".$_POST['mebleg']."','".$_POST['rey']."','".$tarix."')");        
+        VALUES('".$_POST['odn_id']."','".$_POST['kategoriya']."','".$_POST['val_id']."','".$_POST['mebleg']."','".$rey."','".$tarix."')");        
         if($daxilet==true){
             echo'<div class="alert alert-success" role="alert">Ödəniş bazaya əlavə edildi</div>';
         }else{
