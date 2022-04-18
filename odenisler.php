@@ -132,7 +132,7 @@ LEFT JOIN odenis_novu as odn ON o.nov=odn.id ORDER BY o.id ASC
             echo'<tr>';
 
             echo'<td>'.$i.'</td>';
-            echo'<td>'.$info['rey'].'</td>';
+            echo'<td class="reytd">'.$info['rey'].'</td>';
             echo'<td>'.$info['kat_name'].'</td>';
             if($info['odn_id']==2){  echo'<td>'.round($info['mebleg'],2).' ('.$info['val_name'].')</td>';  }else{echo'<td> &nbsp </td>';}
             if($info['odn_id']==1){  echo'<td>'.round($info['mebleg'],2).' ('.$info['val_name'].')</td>';  }else{echo'<td> &nbsp </td>';}
