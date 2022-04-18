@@ -7,7 +7,7 @@ $odn_id = $_POST['odn_id'];
 echo '
 <form action="" method="post" id="addOdenis" name="addOdenis">
     Ödənişin məbləği:<br>
-    <input type="text" id="mebleg" inputmode="numeric" class="form-control" name="mebleg" placeholder="Məbləğ girin" autocomplete="off" required><br>
+    <input type="number" id="mebleg" class="form-control" name="mebleg" placeholder="Məbləğ girin" autocomplete="off" required><br>
     Kategoriya:<br>
     <select name="kategoriya" class="form-control">';
             $sec = mysqli_query($con,"SELECT id,kat_name FROM kategoriya");
